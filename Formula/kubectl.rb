@@ -3,7 +3,7 @@ class Kubectl < Formula
   desc "The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters."
   homepage "https://github.com/meltwater/homebrew-fks"
   url "https://github.com/meltwater/homebrew-fks/releases/download/kubectl-v#{version}/kubectl-darwin-amd64.tar.gz"
-  sha256 "1b8e747984ae3f9aa5a199bd444823d703dcd4dbf0617347b3b3aea254ada7b1"
+  sha256 "5f075714f5a5139eed670782b93013656b483f991722a04d3a3e03d3c3ff931a"
 
   def install
     bin.install "kubectl"
