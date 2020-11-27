@@ -6,7 +6,7 @@ class Helm3 < Formula
   sha256 "71d213d63e1b727d6640c4420aee769316f0a93168b96073d166edcd3a425b3d"
 
   def install
-    bin.install "helm3"
+    bin.install "helm" => "helm3"
   end
 
   # Homebrew requires tests.
