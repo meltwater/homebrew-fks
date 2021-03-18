@@ -9,6 +9,17 @@ class Helm3 < Formula
     bin.install "helm" => "helm3"
   end
 
+  def caveats
+    s = <<~EOS
+      We are not done yet, please install the relevant plugins with:
+
+      /usr/local/bin/helm3 plugin install https://github.com/jkroepke/helm-secrets --version v3.5.0
+      /usr/local/bin/helm3 plugin install https://github.com/databus23/helm-diff --version v3.1.3
+      /usr/local/bin/helm3 plugin install https://github.com/aslafy-z/helm-git --version v0.10.0
+    EOS
+    s
+  end
+
   # Homebrew requires tests.
   test do
     assert_match "v#{version}", shell_output("#{bin}/helm3 version --short", 0)
