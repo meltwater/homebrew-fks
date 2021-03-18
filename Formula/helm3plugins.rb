@@ -1,6 +1,8 @@
 class Helm3plugins < Formula
   version "3.5.3"
   desc "Helm plugins."
+  depends_on "meltwater/fks/helm3"
+  depends_on "meltwater/fks/sops"
   homepage "https://github.com/meltwater/homebrew-fks"
   url "https://github.com/meltwater/homebrew-fks/releases/download/helm3-v#{version}/helm-darwin-amd64.tar.gz"
   sha256 "451ad70dfe286e3979c78ecf7074f4749d93644da8aa2cc778e2f969771f1794"
