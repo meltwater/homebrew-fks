@@ -1,12 +1,15 @@
 class Helm3 < Formula
-  version "3.4.1"
+  version "3.5.3"
   desc "Helm is a tool for managing Charts. Charts are packages of pre-configured Kubernetes resources."
   homepage "https://github.com/meltwater/homebrew-fks"
-  url "https://github.com/meltwater/homebrew-fks/releases/download/helm3-v#{version}/helm-v#{version}-darwin-amd64.tar.gz"
-  sha256 "71d213d63e1b727d6640c4420aee769316f0a93168b96073d166edcd3a425b3d"
+  url "https://github.com/meltwater/homebrew-fks/releases/download/helm3-v#{version}/helm-darwin-amd64.tar.gz"
+  sha256 "451ad70dfe286e3979c78ecf7074f4749d93644da8aa2cc778e2f969771f1794"
 
   def install
     bin.install "helm" => "helm3"
+    system "helm3", "plugin", "install", "https://github.com/databus23/helm-diff", "--version", "v3.1.3"
+    system "helm3", "plugin", "install", "https://github.com/jkroepke/helm-secrets", "--version", "v3.5.0"
+    system "helm3", "plugin", "install", "https://github.com/aslafy-z/helm-git", "--version", "v0.10.0"
   end
 
   # Homebrew requires tests.
