@@ -10,6 +10,15 @@ Current CLI binaries in this tap:
 - kops
 - helm2
 - helm3
+- helmfile
+- sops (installed with helm3 as a dependency)
+- vals (installed with helm3 as a dependency)
+
+To install a formula run:
+
+```
+brew install meltwater/fks/<FORMULA>
+```
 
 --
 
