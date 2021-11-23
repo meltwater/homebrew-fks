@@ -1,4 +1,4 @@
-class Kubectx < Formula
+class Cilium < Formula
   version "v0.9.3"
   desc "Support commandline programs for cilium and hubble"
   homepage "https://github.com/meltwater/homebrew-fks"
