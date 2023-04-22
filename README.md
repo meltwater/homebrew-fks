@@ -6,8 +6,10 @@ This [homebrew](https://brew.sh) tap is created for convenience. It ensures that
 
 Current CLI binaries in this tap:
 
+- dyff
 - kubectl
 - kops
+- kustomize
 - helm2
 - helm3
 - helmfile
